@@ -1,3 +1,9 @@
+// Prerequisite: 
+//Clone the repository and navigate to the week 1 directory.
+// Create a new branch off the main branch for your changes.
+// Create a new file names `name_script.js` where `name` is your name or username.
+// submit your changes as a pull request to the main branch of the repository end of day saturday 12th July.
+
 // Steps to implement calculator functionality:
 
 // 1. Select the display and all calculator buttons from the DOM.
