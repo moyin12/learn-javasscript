@@ -48,11 +48,11 @@ body {
     background: #d1d1d1;
 }
 
-#clear {
+#calculate {
     grid-column: span 4;
     background: #ff6666;
     color: #fff;
 }
-#clear:hover {
+#calculate:hover {
     background: #ff3333;
 }
