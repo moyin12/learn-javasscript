@@ -147,7 +147,7 @@ console.log(obj[sym1]);
 // CODING CHALLENGES
 
 ////////////////////////////////////
-// Coding Challenge #1
+// Coding Challenge #1 && // Coding Challenge #2
 
 /*
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter).
@@ -161,17 +161,6 @@ TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1
 
 GOOD LUCK 😀
 */
-
-// const massMark = 78;
-// const heightMark = 1.69;
-// const massJohn = 92;
-// const heightJohn = 1.95;
-
-/*
-
-////////////////////////////////////
-// Coding Challenge #2
-
 /*
 Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
 
@@ -182,6 +171,23 @@ HINT: Use an if/else statement 😉
 
 GOOD LUCK 😀
 */
+// // SOLUTION #1 & #2
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+//formulas
+const BMI = (massMark / heightMark ** 2).toFixed(2);
+const BMIv2 = (massJohn / (heightJohn * heightJohn)).toFixed(2);
+//conditional boolean
+let higherBMI;
+if (BMI > BMIv2) {
+	higherBMI = `Mark has higher BMI of ${BMI} than John's ${BMIv2}`;
+} else {
+	higherBMI = `John has higher BMI of ${BMIv2} than Mark's ${BMI}`;
+}
+//print result
+console.log(higherBMI);
 
 ////////////////////////////////////
 // Coding Challenge #3
@@ -201,7 +207,40 @@ TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
 GOOD LUCK 😀
 */
+// // SOLUTION #3
 
+//variables
+const teamDolphins = [109, 95, 123];
+const teamKoalas = [97, 112, 101];
+//expression to nearest 2decimals
+const avgTeamDolphins = (
+	(teamDolphins[0] + teamDolphins[1] + teamDolphins[2]) /
+	3
+).toFixed(2);
+const avgTeamKoalas = (
+	(teamKoalas[0] + teamKoalas[1] + teamKoalas[2]) /
+	3
+).toFixed(2);
+
+// conditional if else sttement
+let winner;
+
+if (avgTeamDolphins >= 100 && avgTeamDolphins > avgTeamKoalas) {
+	winner = `Team Dolphin wins with ${avgTeamDolphins} points while Team Koala loses with ${avgTeamKoalas} points`;
+} else if (avgTeamKoalas >= 100 && avgTeamKoalas > avgTeamDolphins) {
+	winner = `Team Koala wins with ${avgTeamKoalas} points while Team Dolphin loses with ${avgTeamDolphins} points`;
+} else if (
+	avgTeamDolphins === avgTeamKoalas &&
+	avgTeamDolphins >= 100 &&
+	avgTeamKoalas >= 100
+) {
+	winner = `It is a draw between Team Koala with ${avgTeamKoalas} points and Team Dolphin with ${avgTeamDolphins} points`;
+} else {
+	winner = "No winner";
+}
+console.log(avgTeamDolphins);
+console.log(avgTeamKoalas);
+console.log(winner);
 ////////////////////////////////////
 // Coding Challenge #4
 
@@ -224,3 +263,9 @@ const bill = 430;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 */
+
+const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+const totalValue = tip + bill
+
+console.log(`Bill value: $${bill}  Tip: $${tip}  Total value: $${totalValue}`)
