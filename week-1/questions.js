@@ -1,28 +1,78 @@
-/*
+
 
 ////////////////////////////////////
 // Strings and Template Literals
-const firstName = 'Jonas';
+// template literals
+// single quote ''
+// double quote ""
+// back ticks `` (this is used for template literal)
+const firstName = 'Moyin';
 const job = 'teacher';
 const birthYear = 1991;
 const year = 2037;
 
-const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
-console.log(jonas);
+//concatenation
+// const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+// console.log(jonas);
 
-const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
-console.log(jonasNew);
+// const moyin = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`
+// console.log(moyin)
 
-console.log(`Just a regular string...`);
+// A template literal is written in a backtick
+// write dynamic values in a ${}
 
-console.log('String with \n\
-multiple \n\
-lines');
 
-console.log(`String
-multiple
-lines`);
+// const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+// console.log(jonasNew);
 
+// console.log(`Just a regular string...`);
+
+// console.log('String with \n\
+// multiple \n\
+// lines');
+
+// console.log(`String
+// multiple
+// lines`);
+
+/*
+Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter).
+
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs using the formula (you can even implement both versions)
+3. Create a boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
+
+TEST DATA 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
+
+GOOD LUCK 😀
+*/
+
+const massMark = 78
+const massJohn = 92
+const heightMark = 1.69
+const heightJohn = 1.95
+
+const markBMI = massMark / heightMark ** 2
+const johnBMI = massJohn / heightJohn ** 2
+
+
+const markHigherBMI = () => {
+  if (markBMI > johnBMI){
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(markHigherBMI())
+// Marks BMI is higher than Johns BMI
+const result = `Mark's BMI is ${markHigherBMI() == true ? 'higher' : 'lower'} than John's BMI`
+console.log(result)
+
+
+
+/*
 ////////////////////////////////////
 // The Conditional (Ternary) Operator
 const age = 23;
