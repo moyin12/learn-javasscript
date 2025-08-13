@@ -1,3 +1,5 @@
+// Follow the instructions in the readme file to submit challenges.
+
 // CODING CHALLENGES
 
 ////////////////////////////////////

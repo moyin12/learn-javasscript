@@ -1,4 +1,6 @@
-// FOllow the instructions in the readme file to submit challenges.
+// Follow the instructions in the readme file to submit challenges.
+
+// CODING CHALLENGES
 
 ////////////////////////////////////
 // Challenge 1: Student Scores
