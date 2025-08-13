@@ -1,24 +1,21 @@
-# learn-javasscript
-
-
 ## Instructions for Submitting Your Assignment (Github)
 
 1. **Create a new branch off `main`**
    ```sh
    git checkout main
    git pull origin main
-   git checkout -b yourname-todoapp
+   git checkout -b feature/yourname
    ```
 
 2. **Create a subfolder under `week 2`**
-   - Example: `week 2/YourName-todoapp`
+   - Example: `week 2/YourName`
    - Add your project files inside this folder.
 
 3. **Commit your changes**
    ```sh
    git add .
-   git commit -m "Add YourName-todoapp project"
-   git push origin yourname-todoapp
+   git commit -m "Submit challenge (update this to match whatever change you make)"
+   git push origin feature/yourname
    ```
 
 4. **Create a Merge Request (Pull Request) to `main`**
